@@ -1,0 +1,28 @@
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# VS Code
+.vscode/
+tempCodeRunnerFile.py
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# PDF (copyright docs)
+版权声明.pdf
