@@ -1,0 +1,649 @@
+{
+  "source_url": "https://img.kookapp.cn/assets/saying.json",
+  "etag": "\"CC3BEE2CDA302687FEA6BD05BCE92944\"",
+  "count": 107,
+  "items": [
+    {
+      "game": "APEX英雄",
+      "role_name": "班加罗尔",
+      "words": "女士们，自动瞄准根本就是天方夜谭。",
+      "source": "remote"
+    },
+    {
+      "game": "APEX英雄",
+      "role_name": "NA",
+      "words": "我重伤倒地了，但还活着。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "辛烷",
+      "words": "Non terrae plus ultra。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "寻血猎犬",
+      "words": "众神之父赐予我视野。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "NA",
+      "words": "协同出行，完美执行。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "班加罗尔",
+      "words": "神出鬼没，击溃敌人。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "地平线",
+      "words": "谋科学之力，行暴力之事。",
+      "source": "remote"
+    },
+    {
+      "game": "Apex 英雄",
+      "role_name": "寻血猎犬",
+      "words": "软弱无力时，要坚强。面对恐惧时，要勇敢。凯旋胜利时，要谦逊。",
+      "source": "remote"
+    },
+    {
+      "game": "CS:GO",
+      "role_name": "SAS",
+      "words": "Bingo-Bango-Bongo, Bish-Bash-Bosh!",
+      "source": "remote"
+    },
+    {
+      "game": "Cry Of Fear",
+      "role_name": "Simon Henriksson",
+      "words": "我不是好人，我不是坏人，我只是一个四处流浪的孤独幽灵。",
+      "source": "remote"
+    },
+    {
+      "game": "DOTA2",
+      "role_name": "克林克兹",
+      "words": "与其感慨路难行，不如马上出发。",
+      "source": "remote"
+    },
+    {
+      "game": "EVE Online",
+      "role_name": "战术指挥命令",
+      "words": "诱导已亮，前方净空！Fly Safe！",
+      "source": "remote+js"
+    },
+    {
+      "game": "EVE名人经典语录",
+      "role_name": "军用馒头",
+      "words": "EVE的战争就是一场豪赌，你要坐上这个桌子，那就赌到一方倾家荡产。",
+      "source": "remote"
+    },
+    {
+      "game": "GTA5",
+      "role_name": "麦克",
+      "words": "你每天忘记的事情有上千件这么多，何不也忘了这件事？",
+      "source": "remote+js"
+    },
+    {
+      "game": "Minecraft",
+      "role_name": "NA",
+      "words": "他梦见了阳光与树木。梦见了火与水。他梦见他创造。亦梦见他毁灭。",
+      "source": "remote"
+    },
+    {
+      "game": "Minecraft",
+      "role_name": "NPC",
+      "words": "龙栗~爱慕搜龙栗~龙栗~爱慕搜龙栗~",
+      "source": "remote+js"
+    },
+    {
+      "game": "PlanetSide2",
+      "role_name": "瓦努播报员",
+      "words": "胜利，距我们咫尺之遥！",
+      "source": "remote"
+    },
+    {
+      "game": "csgo",
+      "role_name": "NA",
+      "words": "lets show them who we are！",
+      "source": "remote"
+    },
+    {
+      "game": "上古卷轴：天际",
+      "role_name": "守卫",
+      "words": "我以前和你一样也是个冒险家，直到我的膝盖中了一箭",
+      "source": "remote+js"
+    },
+    {
+      "game": "主题医院",
+      "role_name": "播音员",
+      "words": "请患者不要死在走廊上。",
+      "source": "js"
+    },
+    {
+      "game": "仙剑奇侠传",
+      "role_name": "Game Over",
+      "words": "胜败乃兵家常事，请大侠重新来过。",
+      "source": "remote+js"
+    },
+    {
+      "game": "仙剑奇侠传四",
+      "role_name": "慕容紫英",
+      "words": "承君此诺，必守一生。",
+      "source": "remote"
+    },
+    {
+      "game": "传说之下",
+      "role_name": "Sans",
+      "words": "但是我们一定会逃出去的。说定了。",
+      "source": "remote"
+    },
+    {
+      "game": "光环致远星",
+      "role_name": "乔治Noble5",
+      "words": "致远星待我不薄，到了我该报恩的时候了。",
+      "source": "remote"
+    },
+    {
+      "game": "全境封锁",
+      "role_name": "NA",
+      "words": "当世界分崩离析 我们将挺身而出。",
+      "source": "remote"
+    },
+    {
+      "game": "冒险岛",
+      "role_name": "NA",
+      "words": "回到那个所有的一切是那么新奇，但却充满了期待和希望的时节，回到冒险的起点。",
+      "source": "remote"
+    },
+    {
+      "game": "冒险岛",
+      "role_name": "敦凯尔",
+      "words": "花瓣正因为会凋零才能够展现它的美丽，而人也是如此。",
+      "source": "remote"
+    },
+    {
+      "game": "冰与火之舞",
+      "role_name": "NA",
+      "words": "兄弟，该换键盘了.",
+      "source": "remote"
+    },
+    {
+      "game": "刺客信条2",
+      "role_name": "Ezio",
+      "words": "万物皆虚，万事皆允。",
+      "source": "remote"
+    },
+    {
+      "game": "刺客信条2",
+      "role_name": "Ezio",
+      "words": "万物皆虚，万事皆允，行于暗夜，侍奉光明。",
+      "source": "js"
+    },
+    {
+      "game": "剑网情缘3",
+      "role_name": "张六爷",
+      "words": "我年轻的时候，也曾快马加鞭，看尽长安花。",
+      "source": "remote"
+    },
+    {
+      "game": "半条命2",
+      "role_name": "NA",
+      "words": "醒来吧，弗里曼先生。该醒来了。",
+      "source": "remote"
+    },
+    {
+      "game": "半条命2 第二章",
+      "role_name": "Gman",
+      "words": "Prepare for unforeseen consequences！",
+      "source": "remote"
+    },
+    {
+      "game": "原神",
+      "role_name": "NA",
+      "words": "向着星辰与深渊！欢迎来到冒险家协会。",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "云无月",
+      "words": "不生则死，不战则亡。",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "姬轩辕",
+      "words": "为何说是天尊地卑，乾坤已定？再有万年，我人族，苍天可踏！",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "岑缨",
+      "words": "人生百年，吾道不孤。总会有人跟我们一起的。",
+      "source": "remote+js"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "岑缨",
+      "words": "人生百年，吾道不孤，相信会有人和我们一起的。",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "姬轩辕",
+      "words": "愿我族人，于此魂梦江海、万古河山之间，星火世传，奋飞不辍。",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "云无月",
+      "words": "我之于人族，和人族之于神魔又有什么不同，难道羸弱便不求强大，微小便永坠尘泥？",
+      "source": "remote"
+    },
+    {
+      "game": "古剑奇谭三",
+      "role_name": "姬轩辕",
+      "words": "有形之物，终会腐朽。",
+      "source": "remote"
+    },
+    {
+      "game": "只狼：影逝二度",
+      "role_name": "苇名一心",
+      "words": "犹豫，就会败北！",
+      "source": "remote+js"
+    },
+    {
+      "game": "命运2",
+      "role_name": "NA",
+      "words": "Guardian Down!",
+      "source": "remote"
+    },
+    {
+      "game": "命运2",
+      "role_name": "奥马尔·阿格",
+      "words": "我要报仇 这辈子，不是下辈子。",
+      "source": "remote"
+    },
+    {
+      "game": "命运2",
+      "role_name": "刘枫",
+      "words": "步履再快，也快不过日出之势。",
+      "source": "remote"
+    },
+    {
+      "game": "命运2",
+      "role_name": "万斯修士",
+      "words": "眼睛依然睁开，灯塔依然光明。",
+      "source": "remote"
+    },
+    {
+      "game": "命运2",
+      "role_name": "爱莲娜-3",
+      "words": "让他们来吧。我将会是他们这辈子看到的最后的光。",
+      "source": "remote"
+    },
+    {
+      "game": "地下城与勇士",
+      "role_name": "NA",
+      "words": "今天，又是充满希望的一天。",
+      "source": "remote"
+    },
+    {
+      "game": "天命2",
+      "role_name": "凯德6号",
+      "words": "盖牌认输永远不在选择之列。",
+      "source": "remote+js"
+    },
+    {
+      "game": "守望先锋",
+      "role_name": "堡垒",
+      "words": "BOO BOO DOO DE DOO！",
+      "source": "remote"
+    },
+    {
+      "game": "守望先锋",
+      "role_name": "末日铁拳",
+      "words": "不经历冲突，怎能不断进化。",
+      "source": "remote"
+    },
+    {
+      "game": "守望先锋",
+      "role_name": "莱因哈特- 威尔海姆",
+      "words": "我受到了召唤，必须回应，一如既往。",
+      "source": "remote+js"
+    },
+    {
+      "game": "守望先锋",
+      "role_name": "雅典娜",
+      "words": "温斯顿，你的血压又升高了。",
+      "source": "remote"
+    },
+    {
+      "game": "守望先锋",
+      "role_name": "DVA",
+      "words": "玩游戏就是为了赢！",
+      "source": "remote"
+    },
+    {
+      "game": "巫师3：狂猎",
+      "role_name": "NPC",
+      "words": "你一看就是个昆特牌高手",
+      "source": "remote+js"
+    },
+    {
+      "game": "底特律：成为新人类",
+      "role_name": "康纳",
+      "words": "你杀不了我，我没有生命。",
+      "source": "remote"
+    },
+    {
+      "game": "异度装甲",
+      "role_name": "开场白",
+      "words": "吾乃阿尔法，吾亦欧米伽。 最先和最后，初始与终末。",
+      "source": "remote+js"
+    },
+    {
+      "game": "彩虹六号",
+      "role_name": "DOC",
+      "words": "我的工作是保护你的人身安全，我不介意你给我来点挑战。",
+      "source": "remote"
+    },
+    {
+      "game": "彩虹六号：围攻",
+      "role_name": "NA",
+      "words": "咚~咚~咚~Duang！Duang！Duang！Hostage KIA.",
+      "source": "remote"
+    },
+    {
+      "game": "彩虹六号：围攻",
+      "role_name": "广告词",
+      "words": "谈判破裂，准备攻坚！",
+      "source": "remote+js"
+    },
+    {
+      "game": "心灵终结",
+      "role_name": "铁骑兵",
+      "words": "Chivalry is not dead!骑士精神长存！",
+      "source": "remote"
+    },
+    {
+      "game": "怪物猎人：世界",
+      "role_name": "NA",
+      "words": "愿指引明路的苍蓝星为你闪耀。",
+      "source": "remote"
+    },
+    {
+      "game": "怪物猎人：世界",
+      "role_name": "Aibo",
+      "words": "迷ったら食ってみろ！迷惘的时候就开吃！",
+      "source": "remote+js"
+    },
+    {
+      "game": "战争雷霆",
+      "role_name": "NA",
+      "words": "别等人老珠黄才懂爱，别等冲出跑道才把刹车踩！",
+      "source": "remote"
+    },
+    {
+      "game": "战争雷霆",
+      "role_name": "NA",
+      "words": "胜败乃兵家常事，但是下一次，我们会赢回来的！",
+      "source": "remote"
+    },
+    {
+      "game": "战神",
+      "role_name": "奎托斯",
+      "words": "不用道歉，记住教训",
+      "source": "remote"
+    },
+    {
+      "game": "战神",
+      "role_name": "奎托斯",
+      "words": "我知道暴力不能解决问题，但是可以解决你。",
+      "source": "js"
+    },
+    {
+      "game": "旺达与巨像",
+      "role_name": "NA",
+      "words": "如果有活下去的机会，一定要牢牢抓住，不要放手。",
+      "source": "remote"
+    },
+    {
+      "game": "星际争霸",
+      "role_name": "Ghost",
+      "words": "Nuclear Launch Detected.",
+      "source": "remote"
+    },
+    {
+      "game": "星际争霸2",
+      "role_name": "凯瑞甘",
+      "words": "我，即是虫群！",
+      "source": "remote+js"
+    },
+    {
+      "game": "星际战甲",
+      "role_name": "Ordis",
+      "words": "Ordis一直都在数星星，指挥官。通通都数完了喔。",
+      "source": "remote"
+    },
+    {
+      "game": "最终幻想14",
+      "role_name": "弗雷",
+      "words": "我将回归你的内心，成为你的泪水，你的愤怒，你为世界而战的力量。",
+      "source": "remote"
+    },
+    {
+      "game": "最终幻想14",
+      "role_name": "NA",
+      "words": "生命之色涡旋流转，七重之门现于时间，力量之塔君临九天，究~极~！",
+      "source": "remote"
+    },
+    {
+      "game": "植物大战僵尸",
+      "role_name": "戴夫",
+      "words": "歪比歪比，歪比巴卜。",
+      "source": "remote"
+    },
+    {
+      "game": "求生之路2",
+      "role_name": "NA",
+      "words": "我们安全了，暂时。",
+      "source": "remote"
+    },
+    {
+      "game": "泰坦陨落2",
+      "role_name": "BT-7274",
+      "words": "协议三，保护铁驭。",
+      "source": "remote+js"
+    },
+    {
+      "game": "泰坦陨落2",
+      "role_name": "库伯",
+      "words": "等我能成为铁驭的那一天，我希望我能实至名归。",
+      "source": "remote"
+    },
+    {
+      "game": "泰坦陨落2",
+      "role_name": "帝王泰坦",
+      "words": "铁驭登机，正在验证协议。",
+      "source": "remote"
+    },
+    {
+      "game": "漫威蜘蛛侠",
+      "role_name": "斯坦·李",
+      "words": "真高兴你们俩复合了，你们是我最喜欢的情侣。",
+      "source": "remote"
+    },
+    {
+      "game": "生化危机",
+      "role_name": "里昂",
+      "words": "Get down！Ada wait！Women......Shit！Run！",
+      "source": "remote"
+    },
+    {
+      "game": "白色相簿2",
+      "role_name": "冬马和纱",
+      "words": "梦里不觉秋已深，余情岂是为他人",
+      "source": "remote"
+    },
+    {
+      "game": "空洞骑士",
+      "role_name": "NA",
+      "words": "在那高远的黑色穹顶下，它的牺牲使圣巢永世不衰。",
+      "source": "remote"
+    },
+    {
+      "game": "索尼克大冒险2",
+      "role_name": "刺猬夏特",
+      "words": "I’m the coolest。",
+      "source": "remote"
+    },
+    {
+      "game": "红色警戒2",
+      "role_name": "伊娃·索菲亚",
+      "words": "Warning, nuclear missile launched.",
+      "source": "remote"
+    },
+    {
+      "game": "罪恶装备",
+      "role_name": "NA",
+      "words": "Heaven or Hell ... Duel One, Let's ROCK!",
+      "source": "remote"
+    },
+    {
+      "game": "英雄联盟",
+      "role_name": "卡密尔",
+      "words": "为仆则忠，为主则殆，这便是道德。",
+      "source": "remote"
+    },
+    {
+      "game": "英雄联盟",
+      "role_name": "凯尔",
+      "words": "于光明中得救！制裁八方！",
+      "source": "remote"
+    },
+    {
+      "game": "英雄联盟",
+      "role_name": "库奇",
+      "words": "王牌飞行员申请出战！",
+      "source": "remote"
+    },
+    {
+      "game": "英雄联盟",
+      "role_name": "亚索",
+      "words": "长路漫漫，唯剑作伴",
+      "source": "js"
+    },
+    {
+      "game": "英雄联盟",
+      "role_name": "亚索",
+      "words": "长路漫漫，唯剑作伴。",
+      "source": "remote"
+    },
+    {
+      "game": "荒野大镖客2：救赎",
+      "role_name": "达奇.范特林",
+      "words": "我有一个计划，你得相信我！",
+      "source": "remote"
+    },
+    {
+      "game": "虚荣",
+      "role_name": "凯瑟琳",
+      "words": "海希安，已融入我的灵魂之中。",
+      "source": "remote"
+    },
+    {
+      "game": "血源诅咒",
+      "role_name": "路德维希",
+      "words": "即便在这漆黑的夜晚，我依旧能看到月光。",
+      "source": "remote+js"
+    },
+    {
+      "game": "行星边际2",
+      "role_name": "NA",
+      "words": "要么进化，要么灭亡。",
+      "source": "remote"
+    },
+    {
+      "game": "超阈限空间",
+      "role_name": "NA",
+      "words": "视角拥有神奇的力量。只要你相信，它就是真的。",
+      "source": "remote"
+    },
+    {
+      "game": "辐射4",
+      "role_name": "噶抓",
+      "words": "先生，连蟑螂老鼠都要打包吗？",
+      "source": "remote+js"
+    },
+    {
+      "game": "辐射系列",
+      "role_name": "开场白",
+      "words": "War, war never changes.（战争，战争从未改变）",
+      "source": "remote+js"
+    },
+    {
+      "game": "逃离塔科夫",
+      "role_name": "NA",
+      "words": "放心, 我的人已经去找你的东西了. 稍安勿躁, 宝贝儿。",
+      "source": "remote"
+    },
+    {
+      "game": "逆转裁判",
+      "role_name": "成步堂龙",
+      "words": "異議あり！！（一个牙医！）",
+      "source": "remote"
+    },
+    {
+      "game": "钢铁雄心",
+      "role_name": "乔治·S·巴顿",
+      "words": "从没有人成功的守住过任何东西，只有进攻，进攻再进攻。",
+      "source": "remote"
+    },
+    {
+      "game": "集合啦！动物森友会",
+      "role_name": "NA",
+      "words": "不是鱼露，是鲈鱼哦！",
+      "source": "remote"
+    },
+    {
+      "game": "骑马与砍杀：战团",
+      "role_name": "海寇",
+      "words": "我会拿你的头盖骨当碗使！",
+      "source": "remote"
+    },
+    {
+      "game": "魔兽世界",
+      "role_name": "伊利丹- 怒风",
+      "words": "你们对力量一无所知",
+      "source": "remote+js"
+    },
+    {
+      "game": "魔兽世界",
+      "role_name": "NPC",
+      "words": "时间就是金钱，我的朋友。",
+      "source": "remote"
+    },
+    {
+      "game": "魔兽世界",
+      "role_name": "NPC",
+      "words": "这个法术还没有准备好。",
+      "source": "remote"
+    },
+    {
+      "game": "黑暗之魂3",
+      "role_name": "杰克巴尔多",
+      "words": "Long may the sun shine!",
+      "source": "remote"
+    },
+    {
+      "game": "龙之谷",
+      "role_name": "戴卡德",
+      "words": "你不是一个人在战斗，让我们一起去屠龙！",
+      "source": "remote"
+    }
+  ]
+}

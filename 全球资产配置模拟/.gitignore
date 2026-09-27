@@ -1,0 +1,11 @@
+1. Data 数据/*
+!1. Data 数据/.gitignore
+_archive/
+_token.local
+*.token
+
+# 本项目还没 git init，眼下 __pycache__ 是靠外层 My Projects 仓库的 .gitignore
+# 才没被跟踪的 —— 一旦本目录独立或外移就会漏，这里自己兜住。
+__pycache__/
+*.py[cod]
+
