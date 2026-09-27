@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """全球资产配置模拟 —— 3a：大类暴露与大类时序动量
 

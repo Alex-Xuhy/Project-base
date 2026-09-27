@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """全球资产配置模拟 —— 1c：外部源补最近几日的价格缺口
 
@@ -229,6 +228,12 @@ def main():
     if stitched is not None:
         stitched.to_csv(EXT_CSV, encoding="utf-8-sig")
         p(f"  ✓ {EXT_CSV}   （站点历史 + 外部缺口，仅「当前读数」类分析可用）")
+    else:
+        # 无缺口（站点没滞后）时 stitch() 返回 None。但下游 3c/3d/4a/4b/5a/5b/5c
+        # 无条件读这个文件 —— 这里曾经静默跳过、退出码照样是 0，于是第 1 步报成功、
+        # 到第 3 步才 FileNotFoundError。无缺口即「站点历史 + 空缺口」，照写不误。
+        site.to_csv(EXT_CSV, encoding="utf-8-sig")
+        p(f"  ✓ {EXT_CSV}   （本日无缺口，即站点原始序列）")
     R.to_csv(RECON_CSV, index=False, encoding="utf-8-sig")
     ext_vol.stack().rename("volume").reset_index().rename(
         columns={"level_0": "date", "level_1": "symbol"}).to_csv(

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 全球资产配置模拟 —— 1b：拆股复权

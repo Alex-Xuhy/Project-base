@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """全球资产配置模拟 —— 4a：保底仓位（核心）与折扣仓位（卫星）的划分
 
@@ -45,7 +44,7 @@ FOCUS = ["IBIT", "BLOK", "SLV", "SIL", "XLK", "GDX", "GLD", "QQQ"]
 CORE_SUB = "美股宽基"
 
 p = print
-g = lambda x: f"{x*100:+.2f}%"
+g = lambda x: f"{x*100:+.2f}%" if pd.notna(x) else "—"   # 无缺口时折扣列为 NaN，显示成「—」而不是「+nan%」
 g1 = lambda x: f"{x:+.2f}"
 
 
@@ -71,7 +70,13 @@ def profile(px, ext, tax):
     idx = anchors(px)
     se = px.index.max()
     gap = [d for d in ext.index if d > se]
-    disc = (ext.loc[gap[-1]] / ext.loc[se] - 1).dropna()
+    if gap:
+        disc = (ext.loc[gap[-1]] / ext.loc[se] - 1).dropna()
+    else:
+        # 无缺口 = 站点报价没滞后 → 不存在「按旧价成交能锁定的折扣」。
+        # 该列整列留空而**不是填 0** —— 0 会被读成「折扣为零」，是另一回事。
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 下表「折扣」列整列留空。")
+        disc = pd.Series(dtype=float)
     rows = []
     for c in tax.index:
         if c not in px.columns:
@@ -124,6 +129,12 @@ def part_b(D):
     p("=" * 100)
     p("Part B —— ⚠ 折扣与平稳是对立的（回答「为什么不能都要」）")
     p("=" * 100)
+    if D["折扣"].isna().all():
+        # 无缺口 = 站点报价没滞后 → 没有折扣可分析，本节跳过（Part A/D 不受影响）。
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 本节跳过。")
+        p("     没有折扣，也就无从谈「折扣与平稳的对立」。")
+        p("")
+        return None
     p(f"  corr(折扣, 8周标准差) = {D['折扣'].corr(D['标准差']):+.3f}"
       f"    corr(折扣, 5%分位) = {D['折扣'].corr(D['5%分位']):+.3f}")
     p("  原因很直接：**两天跳 5-7% 这件事本身就是高波动的表现**。")
@@ -149,6 +160,12 @@ def part_c(D):
     p("=" * 100)
     p("Part C —— 折扣最大的 8 只，逐个体检")
     p("=" * 100)
+    if D["折扣"].isna().all():
+        # 无缺口 = 站点报价没滞后 → 不存在「折扣最大的 8 只」，本节跳过。
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 本节跳过。")
+        p("     「折扣最大的 8 只」是按入场折扣排出来的；没有折扣就没有这张榜。")
+        p("")
+        return None, None, None
     T = D.loc[FOCUS].sort_values("折扣", ascending=False)
     p(T[["中文名", "子类", "折扣", "8周均值", "胜率", "标准差",
          "5%分位", "最差", "1周最差", "1周胜率"]]
@@ -266,6 +283,10 @@ def part_d(D, tax):
 # ---------------------------------------------------------------- 图
 
 def fig_core(D, T):
+    if D["折扣"].isna().all():
+        # 无缺口 = 站点报价没滞后 → 左面板（折扣 vs 标准差）两个轴都失去意义，跳过出图。
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 跳过「折扣 vs 标准差」图。")
+        return None
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -406,8 +427,9 @@ def main():
 
     D.to_csv(os.path.join(OUT_CSV, "H_profile_all.csv"),
              encoding="utf-8-sig")
-    T.to_csv(os.path.join(OUT_CSV, "H_focus8_check.csv"),
-             encoding="utf-8-sig")
+    if T is not None:                       # 无缺口时 Part C 跳过，不写这张表
+        T.to_csv(os.path.join(OUT_CSV, "H_focus8_check.csv"),
+                 encoding="utf-8-sig")
     C.to_csv(os.path.join(OUT_CSV, "H_core_candidates.csv"),
              encoding="utf-8-sig")
 
@@ -418,12 +440,16 @@ def main():
     n_b = sum(1 for c in C.index if tax.at[c, "功能子类"] == CORE_SUB)
     p(f"  · 「SPY/QQQ 一带」= 【美股宽基】子类，8 只；"
       f"前 15 名稳的里有 {n_b} 只来自它。")
-    p("  · 折扣最大的 8 只里，**只有 QQQ / XLK 够格进保底**，其余 6 只只能当卫星。")
-    p("  · 折扣与平稳**结构对立**（corr +0.47）—— 别指望一只标的两样都占。")
-    p("  · 折扣只能覆盖 5% 尾部损失的约 1/4，**当不了安全垫**。")
+    if T is not None:
+        p("  · 折扣最大的 8 只里，**只有 QQQ / XLK 够格进保底**，其余 6 只只能当卫星。")
+        p("  · 折扣与平稳**结构对立**（corr +0.47）—— 别指望一只标的两样都占。")
+        p("  · 折扣只能覆盖 5% 尾部损失的约 1/4，**当不了安全垫**。")
+    else:
+        p("  · ⚠ 本日无缺口 → 上面三条与折扣有关的结论今日**不适用**，已跳过。")
     p("  · 「保底」在只看绝对收益的口径下是**付费选项**：降亏损概率、降期望收益。")
     p("")
-    p(f"  图  {f}")
+    if f is not None:
+        p(f"  图  {f}")
     p("  表  H_profile_all.csv / H_focus8_check.csv / H_core_candidates.csv")
     p("=" * 100)
 

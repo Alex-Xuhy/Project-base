@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """全球资产配置模拟 —— 5b：卫星加 TLT / UUP 值不值？
 
@@ -398,6 +397,13 @@ def part_f(px, ext, tax):
     p("")
     se = px.index.max()
     gap = [d for d in ext.index if d > se]
+    if not gap:
+        # 无缺口 = 站点报价没滞后 → 「按旧价成交锁定涨跌」不再可得，折扣不存在。
+        # 返回带表头的空表，保住 L_entry_discount.csv 的列结构（下游/阅读者都不会误读）。
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 本节跳过。")
+        p("     折扣只在「站点末日 → 外部源末日」这个窗口里存在；缺口归零即无从谈起。")
+        p("")
+        return pd.DataFrame(columns=["中文名", "9/16", "9/18", "折扣"]).rename_axis("标的")
     p(f"  {'标的':<6}{'中文名':<15}{'9/16 价':>10}{'9/18 价':>10}"
       f"{'折扣':>9}{'每 10 万 CNY':>13}")
     p("  " + "-" * 63)

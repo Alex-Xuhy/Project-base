@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 全球资产配置模拟 —— 1a：数据管道
@@ -104,7 +103,9 @@ class Client:
             {
                 "Authorization": "TradesysBearer " + token,
                 "Accept": "application/json",
-                "User-Agent": "Mozilla/5.0 (1a_拉取日线汇率)",
+                # HTTP 头只能是 latin-1，这里不能出现中文，否则 requests 直接抛
+                # UnicodeEncodeError：'latin-1' codec can't encode characters...
+                "User-Agent": "Mozilla/5.0 (1a_daily_bars_fx)",
             }
         )
 

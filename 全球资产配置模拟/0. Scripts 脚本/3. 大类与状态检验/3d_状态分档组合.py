@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """全球资产配置模拟 —— 3d：围绕「加息 + 油价」构造两个月持仓
 
@@ -756,7 +755,20 @@ def main():
     T = part_b(D, DI, cur, tax)
     C = part_c(D, cur, tax)
     E1, E2, E3, E4 = part_e(DI, v_uso)
-    R = part_d(DI, ext, tax, T, se, gap)
+    if gap:
+        R = part_d(DI, ext, tax, T, se, gap)
+    else:
+        # 无缺口 = 站点报价没滞后 → 不存在「入场折扣」，Part D 整节跳过。
+        # 其余部分（A/B/C/E）与缺口无关，照常输出。
+        R = None
+        p("")
+        p("=" * 100)
+        p("Part D —— 入场折扣 × 状态预期")
+        p("=" * 100)
+        p("  ⚠ 本日无缺口（站点报价未滞后）→ 本节跳过。")
+        p("     入场折扣 = 按站点旧价成交能锁定的已实现涨跌，只在")
+        p("     「站点末日 → 外部源末日」这个窗口里存在；缺口归零即无从谈起。")
+        p("")
     f = fig_regime(T, E1, cur, v_uso, v_tlt, pct)
 
     A.to_csv(os.path.join(OUT_CSV, "G_factor_attrib.csv"),
@@ -771,8 +783,9 @@ def main():
               index=False, encoding="utf-8-sig")
     E3.to_csv(os.path.join(OUT_CSV, "G_rate_vs_oil_decomp.csv"),
               index=False, encoding="utf-8-sig")
-    R.to_csv(os.path.join(OUT_CSV, "G_entry_discount_rank.csv"),
-             index=False, encoding="utf-8-sig")
+    if R is not None:
+        R.to_csv(os.path.join(OUT_CSV, "G_entry_discount_rank.csv"),
+                 index=False, encoding="utf-8-sig")
 
     p("")
     p("=" * 100)
